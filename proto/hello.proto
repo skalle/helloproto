@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/skalle/helloproto/proto/hellopb";
+
+package hellopb;
+
+service Hello {
+  rcp Hello (HelloRequest) returns (HelloReploy) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+
+message HelloReploy {
+  string message = 1;
+}
+
