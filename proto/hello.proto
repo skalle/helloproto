@@ -5,7 +5,7 @@ option go_package = "github.com/skalle/helloproto/proto/hellopb";
 
 
 service Hello {
-  rcp Hello (HelloRequest) returns (HelloReply) {}
+  rpc Hello (HelloRequest) returns (HelloReply) {}
 }
 
 message HelloRequest {
@@ -13,7 +13,7 @@ message HelloRequest {
 }
 
 
-message HelloReploy {
+message HelloReply {
   string message = 1;
 }
 
