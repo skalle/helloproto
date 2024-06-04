@@ -5,6 +5,7 @@ go_library(
     srcs = ["client.go"],
     importpath = "github.com/skalle/helloproto/cmd/client",
     visibility = ["//visibility:private"],
+    deps = ["//proto:hellopb"],
 )
 
 go_binary(
